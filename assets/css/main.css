@@ -152,13 +152,13 @@ a:after {
 
 /* Header Wrap */
 #headerwrap {
-	background: url(../img/header-bg.jpg) no-repeat center top;
+	background: url(../img/left.png) no-repeat center top;
 	margin-top: 60px;
-	padding-top:140px;
+	padding-top:260px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 500px;
+	min-height: 720px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -235,7 +235,7 @@ a:after {
 
 #footwrap i {
 	padding-right: 8px;
-	color: #1abc9c;
+	color: #db9f94;
 }
 
 /* Copyright Wrap */
