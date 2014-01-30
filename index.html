@@ -414,6 +414,60 @@
 								var myDoughnut = new Chart(document.getElementById("tdd").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
+					<div class="col-lg-3 col-lg-offset-3 centered">
+						<canvas id="C" height="130" width="130"></canvas>
+						<p>ANSI C</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 90,
+										color:"#db9f94"
+									},
+									{
+										value : 10,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("C").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="embedded" height="130" width="130"></canvas>
+						<p>Embedded</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 70,
+										color:"#db9f94"
+									},
+									{
+										value : 30,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("embedded").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="elec" height="130" width="130"></canvas>
+						<p>Electronics/PCB</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 60,
+										color:"#db9f94"
+									},
+									{
+										value : 40,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("elec").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
 
 			</div><!--/.row -->
 			<div class="row">
