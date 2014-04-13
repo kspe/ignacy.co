@@ -1,6 +1,7 @@
+tmp
 .DS_Store
-.#*
-*~
-*.*~
-\#*
-*.bak
+.env
+mails
+.powenv
+.env
+public
