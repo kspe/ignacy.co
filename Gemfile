@@ -28,8 +28,8 @@ gem 'memcachier'
 gem 'haml'
 
 gem 'pdfkit'
+gem 'thin'
 
 group :development do
-  gem 'thin'
   gem 'debugger', require: 'ruby-debug'
 end
