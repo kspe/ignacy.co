@@ -29,10 +29,6 @@ gem 'haml'
 
 gem 'pdfkit'
 
-# DB
-gem 'sequel'
-gem 'sinatra-sequel'
-
 group :development do
   gem 'thin'
   gem 'debugger', require: 'ruby-debug'
