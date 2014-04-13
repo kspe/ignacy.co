@@ -32,7 +32,6 @@ gem 'pdfkit'
 # DB
 gem 'sequel'
 gem 'sinatra-sequel'
-gem 'pg'
 
 group :development do
   gem 'thin'

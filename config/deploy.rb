@@ -12,8 +12,8 @@ require 'mina/rvm'    # for rvm support. (http://rvm.io)
 
 set :domain, 'app1.kalm.pl'
 set :deploy_to, '/var/sites/ignacy.co'
-set :repository, 'git@github.com:usecide/sinatra-blog.git'
-set :branch, 'master'
+set :repository, 'git@github.com:usecide/ignacy.co.git'
+set :branch, 'sinatra'
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
