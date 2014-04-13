@@ -37,9 +37,9 @@ module Personal
       }
     end
 
-    configure :development, :staging do
-      database.loggers << Logger.new(STDOUT)
-    end
+    # configure :development, :staging do
+    #   database.loggers << Logger.new(STDOUT)
+    # end
 
     configure do
       disable :method_override
