@@ -27,15 +27,7 @@ module Personal
 
         app.set :asset_host, ''
 
-        app.configure :development do
-          assets.cache = Sprockets::Cache::FileStore.new('./tmp')
-        end
-
-        app.configure :production do
-          assets.cache          = Sprockets::Cache::MemcacheStore.new
-          assets.js_compressor  = Closure::Compiler.new
-          assets.css_compressor = YUI::CssCompressor.new
-        end
+        assets.cache = Sprockets::Cache::FileStore.new('./tmp')
 
         app.helpers Helpers
       end

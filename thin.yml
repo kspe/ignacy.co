@@ -5,7 +5,7 @@ rackup: config.ru
 address: 127.0.0.1
 timeout: 30
 wait: 30
-port: 5020
+port: 5021
 log: tmp/logs/thin.log
 max_conns: 1024
 require: []

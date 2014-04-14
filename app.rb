@@ -31,42 +31,20 @@ require 'pdfkit'
 module Personal
   class App < Sinatra::Application
     configure do
-      set :database, lambda {
-        ENV['DATABASE_URL'] ||
-          "postgres://localhost:5432/personal_#{environment}"
-      }
-    end
-
-    # configure :development, :staging do
-    #   database.loggers << Logger.new(STDOUT)
-    # end
-
-    configure do
       disable :method_override
       disable :static
 
       set :erb, escape_html: true
-
-      set :sessions,
-          httponly: true,
-          secure: production?,
-          secure: false,
-          expire_after: 5.years,
-          secret: ENV['SESSION_SECRET']
     end
 
     use Rack::Deflater
     use Rack::Standards
 
+    use Routes::Base
     use Routes::Static
 
     unless settings.production?
       use Routes::Assets
     end
-
-    # Other routes:
-    # use Routes::Posts
   end
 end
-
-include Personal::Models

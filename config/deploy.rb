@@ -27,7 +27,7 @@ set :user, 'root'    # Username in the server to SSH to.
 # `mina deploy` or `mina rake`.
 task :environment do
   set :rvm_path, '/usr/local/rvm/scripts/rvm'
-  invoke :'rvm:use[ruby-2.0.0-p353@blog-ignacy]'
+  invoke :'rvm:use[ruby-2.0.0-p353@ignacy]'
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.

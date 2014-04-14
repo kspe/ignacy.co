@@ -1,6 +1,6 @@
 module Personal
   module Routes
-    class Assets < Base
+    class Assets < Sinatra::Application
       get '/assets/*' do
         env['PATH_INFO'].sub!(%r{^/assets}, '')
         settings.assets.call(env)
