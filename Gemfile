@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.0'
 
 gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-contrib', github: 'maccman/sinatra-contrib'
@@ -25,10 +25,7 @@ gem 'stylus-source', '0.31.0'
 gem 'dalli'
 gem 'memcachier'
 gem 'haml'
+gem 'eventmachine', '~> 1.0.4'
 
 gem 'pdfkit'
 gem 'thin'
-
-group :development do
-  gem 'debugger', require: 'ruby-debug'
-end
