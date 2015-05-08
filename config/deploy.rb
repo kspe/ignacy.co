@@ -55,7 +55,6 @@ task :deploy => :environment do
 
     to :launch do
       queue "bundle exec rake assets:precompile"
-      queue "chown www-data.www-data -R #{deploy_to}/current/public"
       queue "bundle exec thin restart -C thin.yml -R config.ru"
     end
   end
